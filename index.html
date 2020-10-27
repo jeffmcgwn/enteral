@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="chart.jpg" type="image">
+
+    <title>Enteral Equations</title>
+
+<style>
+.password {
+    display:block;
+}
+.calculator {
+    display:none;
+}
+
+#alertHead {
+    display: none;
+}
+
+</style>
+
+</head>
+
+<body class="main">
+    <div class="password">
+
+        <div class="container"> 
+            <div class="card card-body text-center mt-3" style="border:1px solid black" width="100%" id="calc">
+                <div class="alert alert-danger" id="alertHead">
+                    Check your password and try again
+                  </div>
+               <div class="text-center">
+                    <img class="heading display-5 pb-3" id="fcalc1" src="EC.png" width="60%" height="60%">
+                </div>
+               
+                    <h4><strong>Please enter password</strong></h4>
+               
+            <form id="password">
+                <div class="col-6-sm">
+                    <div class="form-group">
+                        
+                        <div class="input-group">
+                            <input type="text" class="form-control mr-sm-2 mt-3" id="pw" placeholder="Password">
+                        </div>
+                    </div>
+                   
+                        <div class="form-group">
+                            <input type="submit" value="Submit" class="btn btn-blue btn-block mt-5" width="25%">
+                        </div>
+                   
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <div class="calculator">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mx-auto">
+                <div class="card card-body text-center mt-3" style="border:1px solid black" width="100%" id="calc">
+                    <div class="animated slideInLeft">
+                        <img class="heading display-5 pb-3" id="fcalc" src="EC.png" width="60%" height="60%">
+                    </div>
+
+
+
+                    <form class="animated slideInRight" id="enteral-form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input step="any" type="number" class="form-control mr-sm-2" id="mls" placeholder="Mls Per Can">
+                                <input step="any" type="number" class="form-control mr-sm-2" id="cals" placeholder="Calories">
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input step="any" type="number" class="form-control mr-sm-2" id="cans" placeholder="Number of Cans">
+
+                                <input step="any" type="number" class="form-control mr-sm-2" id="days" placeholder="Number of Days">
+
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Get Answer" class="btn btn-blue btn-block" width="25%">
+                        </div>
+
+                        <br>
+                        <div class="col-sm-offset-4">
+                            <div class="form-group">
+                                <label for="answer">Answer</label>
+                                <input type="number" style="text-align: center;" class="form-control mr-sm-2" id="answer" placeholder="" disabled>
+                            </div>
+                        </div>
+                        <div id="theanswer">
+
+                        </div>
+                    </form>
+
+
+
+                    <!--RESULTS-->
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="app2.js"></script>
+</body>
+
+</html>
